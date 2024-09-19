@@ -1,0 +1,77 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%@!" : {
+
+    },
+    "%lld Palabras" : {
+
+    },
+    "4/20" : {
+
+    },
+    "Algo salio mal" : {
+
+    },
+    "Buscar" : {
+
+    },
+    "Cerrar" : {
+
+    },
+    "En progreso:" : {
+
+    },
+    "Hello," : {
+
+    },
+    "Hola Mundo" : {
+
+    },
+    "Inicia sesion" : {
+
+    },
+    "Menu Item 1" : {
+
+    },
+    "Menu Item 2" : {
+
+    },
+    "Menu Item 3" : {
+
+    },
+    "Palabras aprendidas" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Registrarse" : {
+
+    },
+    "Salir" : {
+
+    },
+    "TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titleeeeee"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Titulo"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
