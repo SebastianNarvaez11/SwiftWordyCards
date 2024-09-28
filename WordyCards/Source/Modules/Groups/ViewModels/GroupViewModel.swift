@@ -18,6 +18,7 @@ class GroupViewModel: ObservableObject {
     @Published var groups: [GroupModel] = []
     @Published var status: GroupPaginationStatus = .initialLoading
     @Published var hasNextPage: Bool = false
+    @Published var isLoadingGroup: Bool = false
     
     var currentPage: Int = 0
     var totalGroups: Int = 0
@@ -38,6 +39,23 @@ class GroupViewModel: ObservableObject {
             
         }catch{
             print("Ocurrio un error al obtener los grupos", error.localizedDescription)
+        }
+    }
+    
+    @MainActor func getGroupDetailById(id: String) async -> GroupDetailModel? {
+        do{
+            guard !isLoadingGroup else { return nil }
+            defer { isLoadingGroup = false }
+            isLoadingGroup = true
+            
+            let resource = GetGroupDetailResource(groupId: id)
+            print(resource.url)
+            let request = APIRequest(resource: resource)
+            let res = try await request.execute(method: "GET", hasToken: true)
+            return res.group
+        }catch {
+            print("Ocurrio un error al obtener el grupo", error)
+            return nil
         }
     }
 }

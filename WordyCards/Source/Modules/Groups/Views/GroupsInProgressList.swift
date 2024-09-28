@@ -10,7 +10,13 @@ import SwiftUI
 struct GroupsInProgressList: View {
     
     @EnvironmentObject var groupViewModel: GroupViewModel
+    @EnvironmentObject var router: MainRouter
     @State var isAppearing:Bool = false
+    
+    let columns = [
+           GridItem(.flexible()),
+           GridItem(.flexible()),
+       ]
     
     var body: some View {
         
@@ -24,14 +30,17 @@ struct GroupsInProgressList: View {
                 }
             
         default:
-            ScrollView(.horizontal, showsIndicators: false){
-                LazyHStack(spacing: 30){
+            ScrollView(showsIndicators: false){
+                LazyVGrid(columns: columns, spacing: 30){
                     
                     if(groupViewModel.status == .success || groupViewModel.status == .loadingNextPage){
                         ForEach(Array(groupViewModel.groups.enumerated()), id: \.element.id){ index, group in
                             GroupInProgressCardView(group: group)
                                 .offset(x: isAppearing ? 0 : 200, y:0)
                                 .animation(.bouncy.delay(TimeInterval(index) * 0.1), value: isAppearing)
+                                .onTapGesture {
+                                    router.navigateTo(route: .groupDetail(id: group.id))
+                                }
                         }
                     }
                     
@@ -51,7 +60,7 @@ struct GroupsInProgressList: View {
                     
                 }.padding(.horizontal)
             }
-            .frame(height: 190)
+//            .frame(height: 190)
             .onAppear(){
                 isAppearing = true
             }

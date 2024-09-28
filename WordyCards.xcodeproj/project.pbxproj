@@ -15,6 +15,10 @@
 		9E64876D2C7EAB7F007B4598 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64876C2C7EAB7F007B4598 /* LoginResponse.swift */; };
 		9E64876F2C7EABF7007B4598 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64876E2C7EABF7007B4598 /* User.swift */; };
 		9E6487742C7EC13A007B4598 /* LoginBodyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6487732C7EC13A007B4598 /* LoginBodyRequest.swift */; };
+		9E6538972CA4AC8E001F356B /* SwipeCardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6538962CA4AC8E001F356B /* SwipeCardsScreen.swift */; };
+		9E6538992CA4B08D001F356B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6538982CA4B08D001F356B /* CardView.swift */; };
+		9E65389C2CA4BD4F001F356B /* AnimationDragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E65389B2CA4BD4F001F356B /* AnimationDragState.swift */; };
+		9E782A1F2CA8748C007EADE0 /* ButtonsOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E782A1E2CA8748C007EADE0 /* ButtonsOptionsView.swift */; };
 		9E8639DC2C938ECF00B3FA4D /* GetGroupsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8639DB2C938ECF00B3FA4D /* GetGroupsResource.swift */; };
 		9E8639DE2C938F0300B3FA4D /* GetGroupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8639DD2C938F0300B3FA4D /* GetGroupsResponse.swift */; };
 		9E8639E12C93993D00B3FA4D /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8639E02C93993D00B3FA4D /* GroupViewModel.swift */; };
@@ -24,6 +28,7 @@
 		9EA1AB512C87F35900BE5B06 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1AB502C87F35900BE5B06 /* RegisterResponse.swift */; };
 		9EA1AB532C87F53000BE5B06 /* RegisterBodyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1AB522C87F53000BE5B06 /* RegisterBodyRequest.swift */; };
 		9EAF213E2C861EDD00410A32 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAF213D2C861EDD00410A32 /* ApiError.swift */; };
+		9EBFC6412CA37BF300367666 /* ExerciseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFC6402CA37BF300367666 /* ExerciseItemView.swift */; };
 		9EC369A52C923B72009264EE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC369A42C923B72009264EE /* KeychainSwift */; };
 		9EC369A72C9244ED009264EE /* CheckStatusResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC369A62C9244ED009264EE /* CheckStatusResource.swift */; };
 		9EC369A92C92457E009264EE /* CheckStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC369A82C92457E009264EE /* CheckStatusResponse.swift */; };
@@ -59,6 +64,11 @@
 		9ECFA9372C7BBC4300E36D3F /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECFA9362C7BBC4300E36D3F /* TextFieldView.swift */; };
 		9ECFA9392C7BC12B00E36D3F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECFA9382C7BC12B00E36D3F /* ButtonView.swift */; };
 		9ED856862C6AB9CB008F661E /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED856852C6AB9CB008F661E /* GroupModel.swift */; };
+		9EDB40AF2CA2253C00447EA6 /* GroupDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB40AE2CA2253C00447EA6 /* GroupDetailScreen.swift */; };
+		9EDB40B12CA22DDD00447EA6 /* GetGroupDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB40B02CA22DDD00447EA6 /* GetGroupDetailResponse.swift */; };
+		9EDB40B32CA22E5C00447EA6 /* GroupDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB40B22CA22E5B00447EA6 /* GroupDetailModel.swift */; };
+		9EDB40B52CA22ECD00447EA6 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB40B42CA22ECD00447EA6 /* ExerciseModel.swift */; };
+		9EDB40B72CA2306A00447EA6 /* GetGroupDetailResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB40B62CA2306A00447EA6 /* GetGroupDetailResource.swift */; };
 		9EF89A512C8A3D7200B6DECF /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF89A502C8A3D7200B6DECF /* AuthRouter.swift */; };
 		9EF89A622C8A5FBD00B6DECF /* AuthRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF89A612C8A5FBD00B6DECF /* AuthRouterView.swift */; };
 		9EF89A642C8A679700B6DECF /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF89A632C8A679700B6DECF /* BaseRouter.swift */; };
@@ -79,6 +89,10 @@
 		9E64876C2C7EAB7F007B4598 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		9E64876E2C7EABF7007B4598 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E6487732C7EC13A007B4598 /* LoginBodyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBodyRequest.swift; sourceTree = "<group>"; };
+		9E6538962CA4AC8E001F356B /* SwipeCardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardsScreen.swift; sourceTree = "<group>"; };
+		9E6538982CA4B08D001F356B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9E65389B2CA4BD4F001F356B /* AnimationDragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDragState.swift; sourceTree = "<group>"; };
+		9E782A1E2CA8748C007EADE0 /* ButtonsOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsOptionsView.swift; sourceTree = "<group>"; };
 		9E8639DB2C938ECF00B3FA4D /* GetGroupsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGroupsResource.swift; sourceTree = "<group>"; };
 		9E8639DD2C938F0300B3FA4D /* GetGroupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGroupsResponse.swift; sourceTree = "<group>"; };
 		9E8639E02C93993D00B3FA4D /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +102,7 @@
 		9EA1AB502C87F35900BE5B06 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 		9EA1AB522C87F53000BE5B06 /* RegisterBodyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBodyRequest.swift; sourceTree = "<group>"; };
 		9EAF213D2C861EDD00410A32 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		9EBFC6402CA37BF300367666 /* ExerciseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseItemView.swift; sourceTree = "<group>"; };
 		9EC369A62C9244ED009264EE /* CheckStatusResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStatusResource.swift; sourceTree = "<group>"; };
 		9EC369A82C92457E009264EE /* CheckStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStatusResponse.swift; sourceTree = "<group>"; };
 		9EC75EF22C81103E00581CD3 /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
@@ -124,6 +139,11 @@
 		9ECFA9362C7BBC4300E36D3F /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		9ECFA9382C7BC12B00E36D3F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		9ED856852C6AB9CB008F661E /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		9EDB40AE2CA2253C00447EA6 /* GroupDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailScreen.swift; sourceTree = "<group>"; };
+		9EDB40B02CA22DDD00447EA6 /* GetGroupDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGroupDetailResponse.swift; sourceTree = "<group>"; };
+		9EDB40B22CA22E5B00447EA6 /* GroupDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailModel.swift; sourceTree = "<group>"; };
+		9EDB40B42CA22ECD00447EA6 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		9EDB40B62CA2306A00447EA6 /* GetGroupDetailResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGroupDetailResource.swift; sourceTree = "<group>"; };
 		9EF89A502C8A3D7200B6DECF /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		9EF89A612C8A5FBD00B6DECF /* AuthRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouterView.swift; sourceTree = "<group>"; };
 		9EF89A632C8A679700B6DECF /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
@@ -227,6 +247,8 @@
 		9E4CCF7D2C7A430700CDAA6A /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				9E65389A2CA4BCF6001F356B /* Utils */,
+				9EDB40AD2CA2252300447EA6 /* Screens */,
 				9E8639DF2C93992500B3FA4D /* ViewModels */,
 				9E8639DA2C938E4B00B3FA4D /* Resource */,
 				9E4CCF7F2C7A432D00CDAA6A /* Views */,
@@ -239,7 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				9ED856852C6AB9CB008F661E /* GroupModel.swift */,
+				9EDB40B22CA22E5B00447EA6 /* GroupDetailModel.swift */,
 				9E8639DD2C938F0300B3FA4D /* GetGroupsResponse.swift */,
+				9EDB40B02CA22DDD00447EA6 /* GetGroupDetailResponse.swift */,
+				9EDB40B42CA22ECD00447EA6 /* ExerciseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +274,9 @@
 			children = (
 				9E4BE8282C6C08B90021DDAF /* GroupInProgressCardView.swift */,
 				9E4BE82E2C6D09BA0021DDAF /* GroupsInProgressList.swift */,
+				9EBFC6402CA37BF300367666 /* ExerciseItemView.swift */,
+				9E6538982CA4B08D001F356B /* CardView.swift */,
+				9E782A1E2CA8748C007EADE0 /* ButtonsOptionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,10 +346,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9E65389A2CA4BCF6001F356B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9E65389B2CA4BD4F001F356B /* AnimationDragState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		9E8639DA2C938E4B00B3FA4D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				9E8639DB2C938ECF00B3FA4D /* GetGroupsResource.swift */,
+				9EDB40B62CA2306A00447EA6 /* GetGroupDetailResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -476,6 +513,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		9EDB40AD2CA2252300447EA6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9EDB40AE2CA2253C00447EA6 /* GroupDetailScreen.swift */,
+				9E6538962CA4AC8E001F356B /* SwipeCardsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		9EF89A4F2C8A3D5F00B6DECF /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,13 +642,16 @@
 				9E6487742C7EC13A007B4598 /* LoginBodyRequest.swift in Sources */,
 				9EF89A622C8A5FBD00B6DECF /* AuthRouterView.swift in Sources */,
 				9ECFA9302C7A85C100E36D3F /* SplashScreen.swift in Sources */,
+				9E6538992CA4B08D001F356B /* CardView.swift in Sources */,
 				9EC75EF62C81155000581CD3 /* NetworkRequest.swift in Sources */,
 				9E8639E12C93993D00B3FA4D /* GroupViewModel.swift in Sources */,
+				9EDB40B52CA22ECD00447EA6 /* ExerciseModel.swift in Sources */,
 				9ECF52D12C6919B700178AE8 /* BannerShape.swift in Sources */,
 				9EF89A642C8A679700B6DECF /* BaseRouter.swift in Sources */,
 				9ED856862C6AB9CB008F661E /* GroupModel.swift in Sources */,
 				9E4BE82C2C6C09080021DDAF /* getColorStatus.swift in Sources */,
 				9EA1AB4D2C87BCF000BE5B06 /* RegisterFormViewModel.swift in Sources */,
+				9EDB40B72CA2306A00447EA6 /* GetGroupDetailResource.swift in Sources */,
 				9E4BE8292C6C08B90021DDAF /* GroupInProgressCardView.swift in Sources */,
 				9ECFA9392C7BC12B00E36D3F /* ButtonView.swift in Sources */,
 				9ECF52D52C696DB400178AE8 /* SearchBarView.swift in Sources */,
@@ -611,25 +660,32 @@
 				9ECFA92E2C7A7CF000E36D3F /* LoginScreen.swift in Sources */,
 				9ECFA9272C7A782400E36D3F /* AuthStatus.swift in Sources */,
 				9E8639DC2C938ECF00B3FA4D /* GetGroupsResource.swift in Sources */,
+				9EDB40B32CA22E5C00447EA6 /* GroupDetailModel.swift in Sources */,
 				9ECFA9322C7B88E300E36D3F /* SpinnerView.swift in Sources */,
 				9EF89A6B2C8A793A00B6DECF /* ProfileScreen.swift in Sources */,
+				9EDB40AF2CA2253C00447EA6 /* GroupDetailScreen.swift in Sources */,
 				9ECF52CB2C6800EF00178AE8 /* TextModifier.swift in Sources */,
 				9EA1AB512C87F35900BE5B06 /* RegisterResponse.swift in Sources */,
 				9E4BE82F2C6D09BA0021DDAF /* GroupsInProgressList.swift in Sources */,
+				9EDB40B12CA22DDD00447EA6 /* GetGroupDetailResponse.swift in Sources */,
 				9E8639DE2C938F0300B3FA4D /* GetGroupsResponse.swift in Sources */,
+				9E65389C2CA4BD4F001F356B /* AnimationDragState.swift in Sources */,
 				9EFF2C692C7F8406000CA654 /* ErrorResponse.swift in Sources */,
 				9ECF52B22C67D66C00178AE8 /* HomeScreen.swift in Sources */,
 				9EA1AB4B2C87A74C00BE5B06 /* RegisterScreen.swift in Sources */,
 				9EFF2C6B2C7FB744000CA654 /* ApiResource.swift in Sources */,
 				9EF89A6E2C8A799000B6DECF /* MainRouter.swift in Sources */,
+				9E6538972CA4AC8E001F356B /* SwipeCardsScreen.swift in Sources */,
 				9ECF52D32C691A8A00178AE8 /* HomeHeaderView.swift in Sources */,
 				9EF89A702C8A7AFD00B6DECF /* MainRouterView.swift in Sources */,
 				9EAF213E2C861EDD00410A32 /* ApiError.swift in Sources */,
 				9E14FFA72C95E5E900F6AA06 /* RefreshTokenResponse.swift in Sources */,
 				9ECFA92C2C7A7C3C00E36D3F /* AuthViewModel.swift in Sources */,
 				9E64876D2C7EAB7F007B4598 /* LoginResponse.swift in Sources */,
+				9EBFC6412CA37BF300367666 /* ExerciseItemView.swift in Sources */,
 				9EF89A512C8A3D7200B6DECF /* AuthRouter.swift in Sources */,
 				9EC75EF82C81165F00581CD3 /* ApiRequest.swift in Sources */,
+				9E782A1F2CA8748C007EADE0 /* ButtonsOptionsView.swift in Sources */,
 				9E64876F2C7EABF7007B4598 /* User.swift in Sources */,
 				9EC369A72C9244ED009264EE /* CheckStatusResource.swift in Sources */,
 				9EA1AB4F2C87F27C00BE5B06 /* RegisterResource.swift in Sources */,

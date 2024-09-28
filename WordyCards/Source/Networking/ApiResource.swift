@@ -24,6 +24,11 @@ extension ApiResource {
             components.queryItems = queryItems
         }
         
-        return components.url!
+        // Intentamos obtener la URL de los componentes
+        guard let url = components.url else {
+            fatalError("URL no válida para la ruta: \(path)")
+        }
+        
+        return url
     }
 }

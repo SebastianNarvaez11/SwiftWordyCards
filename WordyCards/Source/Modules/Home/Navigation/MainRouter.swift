@@ -11,6 +11,8 @@ import SwiftUI
 enum MainPaths: Hashable {
     case home
     case profile
+    case groupDetail(id: String)
+    case groupSwipeCards(id: String)
 }
 
 
@@ -22,6 +24,11 @@ class MainRouter: BaseRouter<MainPaths> {
             HomeScreen()
         case .profile:
             ProfileScreen()
+        case .groupDetail(let id):
+            GroupDetailScreen(id: id)
+        case .groupSwipeCards(let id):
+            SwipeCardsScreen(id: id)
         }
+    
     }
 }
