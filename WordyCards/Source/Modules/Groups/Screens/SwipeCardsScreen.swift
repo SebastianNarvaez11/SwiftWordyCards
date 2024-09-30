@@ -28,7 +28,7 @@ struct SwipeCardsScreen: View {
                     let scale = isTopCard ? (dragState.isPressing ? 1.1 : 1) : dragState.isDragging ? 1 - ((CGFloat(index) / 100) * 2 ) : 1 - ((CGFloat(index) / 100) * 4)
                     let rotation = isTopCard ? Angle(degrees: Double(dragState.translation.width / 15)) : .zero
                     
-                    CardView(card: card, isTopCard: isTopCard)
+                    CardView(card: card, isTopCard: isTopCard, displacement: dragState.translation.width, limitDrag: limitDrag)
                         .shadow(radius: 5, x: 5, y: 5)
                         .offset(x: xOffset, y: yOffset)
                         .scaleEffect(scale)

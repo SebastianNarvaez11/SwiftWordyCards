@@ -12,6 +12,12 @@ enum DeletedFrom {
     case right, left
 }
 
+let colors: [Color] = [.accentColor, .success, .danger, .warning]
+// Genera un color aleatorio al iniciar la vista
+var randomColor: Color {
+    colors[Int.random(in: 0..<colors.count)]
+}
+
 struct ExerciseModel {
     let id, englishWord, spanishTranslation: String
     let image: URL?
@@ -22,10 +28,12 @@ struct ExerciseModel {
     var deletedFrom: DeletedFrom?
 }
 
+
 extension ExerciseModel: Decodable {
     enum CodingKeys: String, CodingKey {
         case id, englishWord, spanishTranslation, image, rating
     }
+    
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -34,7 +42,7 @@ extension ExerciseModel: Decodable {
         self.spanishTranslation = try container.decode(String.self, forKey: .spanishTranslation)
         self.image = try container.decodeIfPresent(URL.self, forKey: .image)
         self.rating = try container.decode(Int.self, forKey: .rating)
-        self.color = .accentColor
+        self.color = randomColor
         self.isDeleted = false
         self.deletedFrom = nil
     }
